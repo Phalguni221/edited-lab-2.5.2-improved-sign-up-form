@@ -3,172 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vacation Time!</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>H-Thai-ML</title>
+    <img id="table" alt="Restaurant Image" src="./assets/images/table-in-restaurant.jpg">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    
 </head>
 <body>
-    <nav>
-        Enter the Contest for the Vacation of a Lifetime
-    </nav>
+    <!-- HOME PAGE -->
+    <!-- TODO: Navbar here -->
     <main>
-        <h2>Vacation Contest Sign-Up Form</h2>
-         <!-- TODO: Set Action and Method Properties -->
-
-            <form method ="GET" action="results.html">
-                <div>
-                    <label for="firstname">Your First Name<span class="required-field">*</span></label>
-                    <input type="text" minlength="2" maxlength="35" required id="firstname" name="firstname">
-            
-                    <!-- TODO: Create a "lastname" input with type "text" -->
-                    <label for="lastname">Your Last Name<span class="required-field">*</span></label>
-                    <input type="text" minlength="2" maxlength="35" id="lastname" name="lastname">
-                    <!--TODO:Create a "age" input with type "text"-->
-                    <label for="age">Your age</label>
-                    <input type="number" name="age" id="age" min="21" max="120">
-                    <h5>One must be 21 or older to enter the contest</h5>
+        <h1>H-Thai-ML</h1>
+        <h2>We serve tasty food and atmosphere!</h2>
+        <img id="logo" alt=" Restaurant Logo" src="./assets/images/logo.png"> <br>
+       
+              <nav>
+                <ul>
+                    <li>
+                        <a href="contact.html"> 
+                            <h3>Contact</h3>
+                        </li>
+                    <li>
+                    <a href="about.html">
+                        <h3>About</h3>
+                    </li>
+                    <li>
+                    <a href="menu.html">
+                        <h3>Menu</h3>
+                    </li>  
+                </ul>  
+                </nav>
+                <nav>
+                <div class="service">
+                    <h3>Dine In</h3>
                 </div>
-            </form>
-            <!-- TODO: Make fieldset and legend -->
-            <fieldset>
-                <legend>
-                    "Your Contact Info"
-                </legend>
-                <label for="email">Your Email Adress<span class="required-field">*</span></label>
-                <input type="text" id="email" name="email">
-                        <!-- Todo: Street Address Input -->
-                        <label for="streetaddress">Your Street Address</label>
-                        <input type="text" id="streetaddress" name="streetaddress"> 
-                        <!-- Todo: City, State, and Zip Inputs -->
-                        <label for="city">Your City</label>
-                        <input type="text" id="city" name="city">
-    
-                        <label for="state">Your State</label>
-                        <select name="state">
-                                <option value="AL">Alabama</option>
-                                <option value="AK">Alaska</option>
-                                <option value="AZ">Arizona</option>
-                                <option value="AR">Arkansas</option>
-                                <option value="CA">California</option>
-                                <option value="CT">Connecticut</option>
-                                <option value="CO">Colorado</option>
-                                <option value="DE">Delaware</option>
-                                <option value="FL">Florida</option>
-                                <option value="GA">Georgia</option>
-                                <option value="HI">Hawaii</option>
-                                <option value="IA">Iowa</option>
-                                <option value="ID">Idaho</option>
-                                <option value="IL">Illinois</option>
-                                <option value="IN">Indiana</option>
-                                <option value="KY">Kentucky</option>
-                                <option value="LA">Louisiana</option>
-                                <option value="MA">Massachussets</option>
-                                <option value="MD">Maryland</option>
-                                <option value="ME">Maine</option>
-                                <option value="MI">Michigan</option>
-                                <option value="MN">Minnesota</option>
-                                <option value="MO">Missouri</option>
-                                <option value="MS">Mississippi</option>
-                                <option value="MT">Montana</option>
-                                <option value="NC">North Carolina</option>
-                                <option value="ND">North Dakota</option>
-                                <option value="NE">Nebraska</option>
-                                <option value="NH">New Hampshire</option>
-                                <option value="NJ">New Jersey</option>
-                                <option value="NM">New Mexico</option>
-                                <option value="NV">Nevada</option>
-                                <option value="NY">New York</option>
-                                <option value="OH">Ohio</option>
-                                <option value="OK">Oklahoma</option>
-                                <option value="OR">Oregon</option>
-                                <option value="PA">Pennsylvania</option>
-                                <option value="RI">Rhode Island</option>
-                                <option value="SC">South Carolina</option>
-                                <option value="SD">South Dakota</option>
-                                <option value="TN">Tennessee</option>
-                                <option value="TX">Texas</option>
-                                <option value="UT">Utah</option>
-                                <option value="VA">Virginia</option>
-                                <option value="VT">Vermont</option>
-                                <option value="WA">Washington</option>
-                                <option value="WI">Wisconsin</option>
-                                <option value="WV">West Virginia</option>
-                                <option value="WY">Wyoming</option>
-                        </select>
-    
-                        <label for="zipcode">Your Zip Code</label>
-                        <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" title="5-digit ZIP code">
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>
-                            "Your Preferences"
-                        </legend>
-                        <fieldset>
-                            <legend>Your Preferences</legend>
-                            <h3>Choose your location</h3>
-                            <div>
-                                <input type="radio" id="aruba" name="location" value="Aruba" checked> 
-                                <label for="aruba">Aruba</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="japan" name="location" value="Japan"> 
-                                <label for="japan">Japan</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="reykjavik" name="location" value="Reykjavik"> 
-                                <label for="reykjavik">Reykjavik</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="new-zealand" name="location" value="New Zealand"> 
-                                <label for="new-zealand">New Zealand</label>
-                            </div>
-                           <div>
-                            <input type="color" id="color" name="color">
-                           </div>
-                        </fieldset>
-                        <fieldset>
-                            <legend>
-                                Extras
-                            </legend>
-                            <div>
-                                <input type="checkbox" id="sauna" name="sauna" value="sauna"> 
-                                <label for="sauna">Sauna</label>
-                            </div>
-                           <div>
-                            <input type="checkbox" id="spa" name="spa" value="spa"> 
-                            <label for="spa">Spa</label>
-                           </div>
-                              <div>
-                                <input type="checkbox" id="tour" name="tour" value="tour"> 
-                            <label for="tour">Tour</label>  
-                              </div>
-                        </fieldset>
-
-                        <fieldset>
-                            <div>
-                                <label for="password">Your Secret Code(must be 6 Alphanumeric Pass Code)<span class="required-field">*</span></label>
-                        <input type="password" id="password" name="password" pattern="[0-9]{6}|[Aa]-[Zz]{26}" title="6 Alphanumeric Character Passcode" required>  
-                              </div>
-                        </fieldset>
-                         
-            <!-- Todo: Email Input -->
-            <!-- Todo: Street Address Input -->
-            <!-- Todo: City, State, and Zip Inputs -->
-
-            <!-- TODO: Second fieldset -->
-            <!-- TODO: Radio buttons for selecting preferred destination -->
-            <!-- TODO: Color input for selecting favorite color -->
-            <!-- TODO: Checkboxes for selecting extra add-ons -->
-            
-            <!-- TODO: Submit Button -->
-            <input type="submit" id="submit" name="submit" value="Submit"> 
-            <label for="submit">Enter the Contest</label>
-            
-        </form>
-    </main>
-    <footer>
-        <h2>Resource Attributions</h2>
-        <p>All images provided for free use via <a href="https://unsplash.com/">Unsplash.com</a> whose generous <a href="https://unsplash.com/license">license details can be found here</a>.</p>
-    </footer>
+                <div class="service">
+                    <h3>Take Out</h3>
+                </div>
+                <div class="service">
+                    <h3>Delivery</h3>
+              </nav>
+        
+        <!-- TODO: Home page code here-->
+    <!-- TODO: Banner Image here-->
+    <img id="banner" alt="Banner logo" src="./assets/images/banner.png"> <br>
+        <!-- TODO: Home page code here-->
 </body>
+<footer>
+    Quality food at lower monetary quantities!
+</footer>
 </html>
