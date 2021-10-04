@@ -13,7 +13,6 @@
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
          <!-- TODO: Set Action and Method Properties -->
-
             <form method ="GET" action="results.html">
                 <div>
                     <label for="firstname">Your First Name<span class="required-field">*</span></label>
@@ -43,7 +42,7 @@
                         <input type="text" id="city" name="city">
     
                         <label for="state">Your State</label>
-                        <select name="state">
+                        <datalist id="state-list">
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
                                 <option value="AZ">Arizona</option>
@@ -94,7 +93,7 @@
                                 <option value="WV">West Virginia</option>
                                 <option value="WY">Wyoming</option>
                         </select>
-    
+                    </datalist>
                         <label for="zipcode">Your Zip Code</label>
                         <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" title="5-digit ZIP code">
                     </fieldset>
