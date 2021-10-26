@@ -28,6 +28,7 @@
 
         // Gather some of the data from the querystring
         let name = `${urlParams.get('firstname')} ${urlParams.get('lastname')}`
+        console.log(name)
         let choice = urlParams.get('location') 
         let color = urlParams.get('color') 
         let extras = urlParams.getAll('extras')

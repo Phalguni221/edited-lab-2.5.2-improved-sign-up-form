@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vacation Time!</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src=script.js></script>
 </head>
 <body>
     <nav>
@@ -12,32 +13,36 @@
     </nav>
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
-         <!-- TODO: Set Action and Method Properties -->
+    
             <form method ="GET" action="results.html">
                 <div>
                     <label for="firstname">Your First Name<span class="required-field">*</span></label>
-                    <input type="text" minlength="2" maxlength="35" required id="firstname" name="firstname">
-            
-                    <!-- TODO: Create a "lastname" input with type "text" -->
+                    <input type="text" minlength="2" maxlength="35" required id="firstname" name="firstname" placeholder="firstname" required/>
+                </div>
+
+                 <div>
                     <label for="lastname">Your Last Name<span class="required-field">*</span></label>
-                    <input type="text" minlength="2" maxlength="35" id="lastname" name="lastname">
-                    <!--TODO:Create a "age" input with type "text"-->
+                    <input type="text" minlength="2" maxlength="35" id="lastname" name="lastname" placeholder="lastname" required/>
+                 </div>
+
+                 <div>
                     <label for="age">Your age</label>
-                    <input type="number" name="age" id="age" min="21" max="120">
+                    <input type="number" name="age" id="age" min="21" max="120" placeholder="age" required>
                     <h5>One must be 21 or older to enter the contest</h5>
                 </div>
-            </form>
-            <!-- TODO: Make fieldset and legend -->
+           
             <fieldset>
                 <legend>
                     "Your Contact Info"
                 </legend>
+            <div>
                 <label for="email">Your Email Adress<span class="required-field">*</span></label>
-                <input type="text" id="email" name="email">
-                        <!-- Todo: Street Address Input -->
+                <input type="text" id="email" name="email" placeholder="email-address" required>
+            </div>
+                      
                         <label for="streetaddress">Your Street Address</label>
                         <input type="text" id="streetaddress" name="streetaddress"> 
-                        <!-- Todo: City, State, and Zip Inputs -->
+                       
                         <label for="city">Your City</label>
                         <input type="text" id="city" name="city">
     
@@ -98,11 +103,6 @@
                         <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" title="5-digit ZIP code">
                     </fieldset>
 
-                            <!-- TODO: Second fieldset -->
-            <!-- TODO: Radio buttons for selecting preferred destination -->
-            <!-- TODO: Color input for selecting favorite color -->
-            <!-- TODO: Checkboxes for selecting extra add-ons -->
-
                     <fieldset>
                         <legend>
                             "Your Preferences"
@@ -130,6 +130,7 @@
                             <input type="color" id="color" name="color">
                            </div>
                         </fieldset>
+
                         <fieldset>
                             <legend>
                                 Extras
@@ -149,16 +150,14 @@
                         </fieldset>
 
                         <fieldset>
-                            <div>
+                            <div class = ss-item required>
                                 <label for="password">Your Secret Code(must be 6 Alphanumeric Pass Code)<span class="required-field">*</span></label>
-                        <input type="password" id="password" name="password" pattern="[0-9]{6}|[Aa]-[Zz]{26}" title="6 Alphanumeric Character Passcode" required>  
+                        <input type="password" id="password" name="password" pattern="[0-9]{6}|[Aa]-[Zz]{26}" title="6 Alphanumeric Character Passcode" placeholder="6 Alphanumeric Character Passcode" required>  
                               </div>
-                        </fieldset>
+                        </fieldset> 
             
-            <!-- TODO: Submit Button -->
-            <label for="submit">Enter the Contest</label>
-            <input type="submit" id="submit" name="submit" value="Submit"> 
-            
+         
+            <input type="submit" id="submit" name="submit" value="Enter the Contest!">
         </form>
     </main>
     <footer>
