@@ -97,7 +97,7 @@
                                 <option value="WI">Wisconsin</option>
                                 <option value="WV">West Virginia</option>
                                 <option value="WY">Wyoming</option>
-                        </select>
+                    
                     </datalist>
                         <label for="zipcode">Your Zip Code</label>
                         <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" title="5-digit ZIP code">
@@ -150,11 +150,12 @@
                         </fieldset>
 
                         <fieldset>
-                            <div class = ss-item required>
-                                <label for="password">Your Secret Code(must be 6 Alphanumeric Pass Code)<span class="required-field">*</span></label>
-                        <input type="password" id="password" name="password" pattern="[0-9]{6}|[Aa]-[Zz]{26}" title="6 Alphanumeric Character Passcode" placeholder="6 Alphanumeric Character Passcode" required>  
-                              </div>
-                        </fieldset> 
+                            <div>
+                            <label for="password">Your Secret Code(must be 6 Alphanumeric Pass Code)<span class="required-field">*</span></label>
+                        <input type="password" id="password" name="password" pattern="[0-9]{6}|[Aa]-[Zz]{26}" title="6 Alphanumeric Character Passcode" 
+                            placeholder="6 Alphanumeric Character Passcode" required>  
+                            </div>
+                        </fieldset>  
             
          
             <input type="submit" id="submit" name="submit" value="Enter the Contest!">
